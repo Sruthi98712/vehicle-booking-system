@@ -35,7 +35,8 @@ const limiter = rateLimit({
   message: 'Too many requests from this IP, please try again after 15 minutes'
 });
 
-app.use(cors());
+app.use(cors({
+  origin:"vehicle-booking-system-ixnu.vercel.app"));
 app.use(limiter);
 app.use(express.json());
 app.use(cookieParser());
