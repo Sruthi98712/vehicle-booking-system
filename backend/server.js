@@ -36,7 +36,7 @@ const limiter = rateLimit({
 });
 
 app.use(cors({
-  origin:"vehicle-booking-system-ixnu.vercel.app"));
+  origin:"vehicle-booking-system-ixnu.vercel.app"}));
 app.use(limiter);
 app.use(express.json());
 app.use(cookieParser());
