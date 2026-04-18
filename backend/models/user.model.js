@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
     enum: ['admin', 'vendor', 'customer'],
     default: 'customer'
   },
-  phone: { type: String, default: '' },
+    phone: { type: String, required: false },
   mobile: { type: String, unique: true, required: true },
   isMobileVerified: { type: Boolean, default: false },
   googleId: { type: String, unique: true, sparse: true },
